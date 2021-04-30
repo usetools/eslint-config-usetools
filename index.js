@@ -25,10 +25,12 @@ module.exports = {
   },
   // 自定义规则覆盖extends部分规范
   rules: {
+    '@typescript-eslint/no-use-before-define': ['error'],
+    'no-use-before-define': 'off',
     // 生成环境禁止 console & debugger
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    // 不检查有无 "use strict"
+    // 不检查有无 'use strict'
     strict: 'off',
     // 2个空格缩进
     indent: ['error', 2, {
@@ -132,7 +134,7 @@ module.exports = {
     'jest/valid-title': 0,
     'jest/no-conditional-expect': 0,
 
-    'unicorn/better-regex': 2,
+    'unicorn/better-regex': 0,
     'unicorn/prefer-string-trim-start-end': 2,
     'unicorn/expiring-todo-comments': 2,
     'unicorn/no-abusive-eslint-disable': 2,
