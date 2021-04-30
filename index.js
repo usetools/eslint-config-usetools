@@ -140,5 +140,7 @@ module.exports = {
     'unicorn/no-abusive-eslint-disable': 2,
     'quotes': ['error', 'single'],
     'no-undef': 'error',
+
+    'react-hooks/exhaustive-deps': 'off',
   },
 };
