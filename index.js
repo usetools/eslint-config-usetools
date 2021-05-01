@@ -141,6 +141,6 @@ module.exports = {
     'quotes': ['error', 'single'],
     'no-undef': 'error',
 
-    'react-hooks/exhaustive-deps': 'off',
+    'react-hooks/exhaustive-deps': 0,
   },
 };
